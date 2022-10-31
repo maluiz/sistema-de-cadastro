@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<body>
+
+    <script>
+
+    // Seu desafio de hoje é criar os destinos possíveis de um jogo, em que o usuário consiga escolher:
+
+    // 1. Se quer seguir para área de Front-End ou seguir para a área de Back-End.
+
+    // 2. Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de Back-End, poderá aprender C# ou aprender Java.
+
+    // 3. Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack. Você deve exibir na tela uma mensagem específica para cada escolha.
+
+    // 4. Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer. Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar respondendo ok para a pergunta: “Tem mais alguma tecnologia que você gostaria de aprender?”, continue apresentando para ela o Prompt, para que ela complete o nome da tecnologia em questão. E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.
+
+    // O importante é que a pessoa que estiver jogando possa sempre escolher qual decisão tomar para conseguir aprender e se desenvolver na área de programação.
+
+    // Além disso, também é essencial que, ao final do jogo, ela possa inserir quantas tecnologias quiser na lista de aprendizado.
+
+    const nome = prompt("Digite seu nome: ", "Nome")
+    alert(`Seja Bem-Vindo ${nome} ! Você esta pronto para o jogo ?`)
+
+    const areas = prompt("Para começar, você gostaria de seguir para qual área ? Front-End ou Back-End?")
+
+    if(areas == "Front-End"){
+        const front = prompt("Legal ! Agora você deseja aprender React ou Vue ?")
+        if(front == "React"){
+            const linguaUm = prompt("Legal ! Vamos dar os primeiros passos com o REACT ! Você gostaria de continuar ou adicionar a linguagem Vue ? (Responda 1 para continuar e 2 para adicionar a linguagem Vue !)")
+            if(linguaUm == 1){
+                alert("Parabéns ! Você já está dominando o REACT !")
+            } else if (linguaUm == 2){
+                alert("Parabéns ! Você já domina REACT e VUE ! ")
+            } else{
+                alert("Digite uma opção válida !")
+            }
+
+        } else if(front == "Vue") {
+            const linguaDois = prompt("Legal ! Vamos dar os primeiros passos com o VUE ! Você gostaria de continuar ou adicionar a linguagem REACT ? (Responda 1 para continuar e 2 para adicionar a linguagem React !)")
+            if(linguaDois == 1){
+                alert("Parabéns ! Você está dominando a linguagem VUE !")
+            } else if (linguaDois == 2){
+                alert("Parabens ! Você já domina VUE e REACT !")
+            } else {
+                alert("Digite uma opção Válida !")
+            }
+        } else {
+            alert("Digite uma das opçoes válidas !")
+        }
+    } else if (areas == "Back-End"){
+        const back = prompt("Legal ! Agora você deseja aprender C# OU Java ? ")
+        if(back == "C#"){
+            const linguaBackUm = prompt("Boa escolha ! Vamos dar os primeiros passos com a linguagem C# ! Você gostaria de continuar ou adicionar a linguagem JAVA ? (Responda 1 para continuar e 2 para adicionar a linguagem Java !)")
+            if(linguaBackUm == 1){
+                alert("Parabéns ! Você Já domina a linguagem C# ! ")
+            } else if(linguaBackUm == 2 ){
+                alert("Parabéns ! Você já domina as linguagens C# e Java !")
+            } else {
+                alert("Digite uma das opções válidas !")
+            }
+        } else if (back == "Java"){
+            const linguaBackDois = prompt("Excelente ! Vamos dar os primeiros passos com a linguagem Java ! Você gostaria de continuar ou adicionar a linguagem C# ? (Responda 1 para continuar e 2 para adicionar a linguagem C#)")
+            if(linguaBackDois == 1){
+                alert("Parabéns ! Você ja domina a linguagem JAVA !")
+            } else if (linguaBackDois == 2){
+                alert("Parabéns ! Você já domina as linguagens JAVA e C# !")
+            } else{
+                alert("Digite uma das opções válidas !")
+            }
+        } else {
+            alert("Digite uma das opções válidas !")
+        }
+    }
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
